@@ -30,31 +30,30 @@ class ButtonLearnView extends StatelessWidget {
             ),
           ),
 
-          ElevatedButton(onPressed: null, child: Text("Data")),
+          const ElevatedButton(onPressed: null, child: Text("Data")),
 
-          IconButton(onPressed: () {}, icon: Icon(Icons.access_alarm_outlined)),
+          IconButton(onPressed: () {}, icon: const Icon(Icons.access_alarm_outlined)),
 
           FloatingActionButton(
             onPressed: () {},
-            child: Icon(Icons.add),
+            child: const Icon(Icons.add),
           ),
 
           OutlinedButton(
             onPressed: () {},
-            child: Text("Data"),
-            style: OutlinedButton.styleFrom(
-                shape: CircleBorder(), padding: EdgeInsets.all(14.1)),
+            child: const Text("Data"),
+            style: OutlinedButton.styleFrom(shape: const CircleBorder(), padding: EdgeInsets.all(14.1)),
           ),
 
           OutlinedButton.icon(
-            icon: Icon(Icons.account_balance),
+            icon: const Icon(Icons.account_balance),
             onPressed: () {},
-            label: Text("Ev"),
+            label: const Text("Ev"),
           ),
 
           //Texte presses (tıklanma) özelliği eklenir
           InkWell(
-            child: Text("Merve"),
+            child: const Text("Merve"),
             onTap: () {},
           ),
 
@@ -62,24 +61,21 @@ class ButtonLearnView extends StatelessWidget {
             height: 50,
             color: const Color.fromARGB(255, 0, 0, 0),
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
 
           ElevatedButton(
             onPressed: () {},
             child: Padding(
-              padding: const EdgeInsets.only(
-                  top: 10, bottom: 10, left: 20, right: 20),
+              padding: const EdgeInsets.only(top: 10, bottom: 10, left: 20, right: 20),
               child: Text(
                 "Place Bid",
-                style: TextStyle(color: Colors.white, fontSize: 30),
+                style: const TextStyle(color: Colors.white, fontSize: 30),
               ),
             ),
             style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.black,
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(40))),
+                backgroundColor: Colors.black, shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40))),
           ),
         ],
       ),

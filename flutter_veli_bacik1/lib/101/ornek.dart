@@ -7,7 +7,7 @@ class TasarimEkrani extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           "FLUTTER TASARIM EKRANI",
           style: TextStyle(color: Colors.black, fontWeight: FontWeight.w400),
         ),
@@ -19,22 +19,10 @@ class TasarimEkrani extends StatelessWidget {
         child: Column(
           children: [
             Row(children: [
-              _ElevatedButtonView(
-                  buttonColor: ProjectColor.black,
-                  text: "Tab",
-                  textColor: ProjectColor.white),
-              _ElevatedButtonView(
-                  buttonColor: ProjectColor.white,
-                  text: "Tab",
-                  textColor: ProjectColor.black),
-              _ElevatedButtonView(
-                  buttonColor: ProjectColor.white,
-                  text: "Tab",
-                  textColor: ProjectColor.black),
-              _ElevatedButtonView(
-                  buttonColor: ProjectColor.white,
-                  text: "Tab",
-                  textColor: ProjectColor.black),
+              _ElevatedButtonView(buttonColor: ProjectColor.black, text: "Tab", textColor: ProjectColor.white),
+              _ElevatedButtonView(buttonColor: ProjectColor.white, text: "Tab", textColor: ProjectColor.black),
+              _ElevatedButtonView(buttonColor: ProjectColor.white, text: "Tab", textColor: ProjectColor.black),
+              _ElevatedButtonView(buttonColor: ProjectColor.white, text: "Tab", textColor: ProjectColor.black),
             ]),
             _Container(),
             Row(
@@ -52,13 +40,11 @@ class TasarimEkrani extends StatelessWidget {
 
   Container _Container() {
     return Container(
-      margin: EdgeInsets.only(top: 30, bottom: 10),
+      margin: const EdgeInsets.only(top: 30, bottom: 10),
       child: Column(
         children: [
           _TabWidgetText(text: "Title", textColor: Colors.black),
-          _TabWidgetText(
-              text: "Subheading about this section",
-              textColor: ProjectColor.grey),
+          _TabWidgetText(text: "Subheading about this section", textColor: ProjectColor.grey),
         ],
       ),
     );
@@ -83,10 +69,7 @@ class _ElevatedButtonView extends StatelessWidget {
       child: ElevatedButton(
           onPressed: () {},
           child: _TabWidgetText(text: text, textColor: textColor),
-          style: ElevatedButton.styleFrom(
-              backgroundColor: buttonColor,
-              shadowColor: Colors.grey,
-              elevation: 10)),
+          style: ElevatedButton.styleFrom(backgroundColor: buttonColor, shadowColor: Colors.grey, elevation: 10)),
     );
   }
 }

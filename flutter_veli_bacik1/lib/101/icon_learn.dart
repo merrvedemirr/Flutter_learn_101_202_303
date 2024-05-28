@@ -18,9 +18,7 @@ class IconLearnView extends StatelessWidget {
             onPressed: () {},
             icon: Icon(
               Icons.message_outlined,
-              color: Theme.of(context)
-                  .colorScheme
-                  .error, //theme kullandık(en iyisi budur.)
+              color: Theme.of(context).colorScheme.error, //theme kullandık(en iyisi budur.)
               size: IconSize.iconSmallx2, //static yapısı kullandık
             ),
           ),
@@ -44,5 +42,5 @@ class IconSize {
 }
 
 class IconColor {
-  final Color Awesome = Color.fromRGBO(255, 28, 106, 100);
+  final Color Awesome = const Color.fromRGBO(255, 28, 106, 100);
 }

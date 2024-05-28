@@ -26,7 +26,7 @@ class _ListViewBuilderState extends State<ListViewBuilder> {
               height: 100,
               child: Column(
                 children: [
-                  Expanded(child: RandomImage()), //Resim Taşarsa sığdırıyor taşmayı engeller.
+                  Expanded(child: const RandomImage()), //Resim Taşarsa sığdırıyor taşmayı engeller.
                   Text("$index"),
                 ],
               ),

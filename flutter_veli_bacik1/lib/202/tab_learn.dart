@@ -48,6 +48,7 @@ class _TabLearnState extends State<TabLearn> with TickerProviderStateMixin {
         ));
   }
 
+  //!alt button kısmı oluşuyor.
   TabBar _MyTabView() {
     return TabBar(
         //diğer özellikleri themeden verdik.s
@@ -58,6 +59,7 @@ class _TabLearnState extends State<TabLearn> with TickerProviderStateMixin {
         tabs: _MyTabViews.values.map((e) => Tab(text: "${e.name}")).toList());
   }
 
+  //! Ana ekran görünüm ywri oluşuyor.
   TabBarView _TabBarView() {
     return TabBarView(
         physics: NeverScrollableScrollPhysics(), //Scroll özelliği kapalı olur.

@@ -20,10 +20,10 @@ class ColumnRowLearn extends StatelessWidget {
               child: Container(
                 color: Colors.green,
               )),
-          Spacer(
+          const Spacer(
             flex: 1,
           ),
-          Expanded(
+          const Expanded(
               flex: 3,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,

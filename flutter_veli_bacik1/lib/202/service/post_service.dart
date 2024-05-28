@@ -114,7 +114,7 @@ class _ShowDebug {
   static void showDioException<T>(DioException exception, T type) {
     if (kDebugMode) {
       print(exception.message);
-      print(type);
+      print(type); //hatanın nereden geldiğini gösteriyor.
     }
   }
 }

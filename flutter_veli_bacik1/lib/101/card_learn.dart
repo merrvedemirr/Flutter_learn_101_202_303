@@ -13,10 +13,7 @@ class CardLearnView extends StatelessWidget {
               child: SizedBox(
             width: 300,
             height: 100,
-            child: Center(
-                child: _CardText(
-                    text: "Merhaba",
-                    textColor: Theme.of(context).colorScheme.secondary)),
+            child: Center(child: _CardText(text: "Merhaba", textColor: Theme.of(context).colorScheme.secondary)),
           ))
         ],
       ),
@@ -50,7 +47,7 @@ class CardMargin {
 class CustomCard extends StatelessWidget {
   final Widget child;
 
-  CustomCard({super.key, required this.child});
+  const CustomCard({super.key, required this.child});
 
   Widget build(BuildContext context) {
     return Card(

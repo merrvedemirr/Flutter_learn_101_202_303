@@ -15,10 +15,9 @@ class ListTileLearn extends StatelessWidget {
               onTap: () {},
               title: RandomImage(),
               //contentPadding: Theme.of(context).listTileTheme.contentPadding,
-              subtitle: Text("How do you use your card"),
-              leading: Icon(Icons.money), //SOLUNA BİR WİDGET KOYMAMIZI SAĞLAR.
-              trailing: Icon(
-                  Icons.chevron_right), //SAĞINA BİR WİDGET KOYMAMIZI SAĞLAR
+              subtitle: const Text("How do you use your card"),
+              leading: const Icon(Icons.money), //SOLUNA BİR WİDGET KOYMAMIZI SAĞLAR.
+              trailing: const Icon(Icons.chevron_right), //SAĞINA BİR WİDGET KOYMAMIZI SAĞLAR
             ),
           )
         ],

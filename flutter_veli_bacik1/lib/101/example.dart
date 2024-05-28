@@ -18,7 +18,7 @@ class LoginView extends StatelessWidget {
         child: Column(
           children: [
             TextView(text: appName, textKalinligi: fontWeight().boldX, textSize: fontWeight().fontSizeLarge),
-            SizedBox(
+            const SizedBox(
               height: 100,
             ),
             TextView(
@@ -26,13 +26,13 @@ class LoginView extends StatelessWidget {
               textKalinligi: fontWeight().bold,
               textSize: fontWeight().fontSizeNormal,
             ),
-            SizedBox(
+            const SizedBox(
               height: 5,
             ),
             TextView(text: text3, textKalinligi: fontWeight().slim, textSize: fontWeight().fontSizeSlim),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 30),
-              child: _TextFieldWidget(),
+              child: const _TextFieldWidget(),
             ),
             _ElevatedButtonView(data: data),
             Padding(
@@ -70,7 +70,7 @@ class _ElevatedButtonView extends StatelessWidget {
         onPressed: () {},
         child: Text(
           data,
-          style: TextStyle(color: Colors.white),
+          style: const TextStyle(color: Colors.white),
         ),
         style: ElevatedButton.styleFrom(
           backgroundColor: buttonBackgroundColor,

@@ -33,7 +33,7 @@ class _PageViewLearnState extends State<PageViewLearn> {
             padding: _PaddingUtility()._paddingValue,
             child: Text("$_currntPageIndex"),
           ),
-          Spacer(),
+          const Spacer(),
           FloatingActionButton(
             onPressed: () {
               _pageController.previousPage(duration: _DurationUtility()._durationLow, curve: Curves.slowMiddle);

@@ -22,14 +22,14 @@ class ContainerSizedBoxLearn extends StatelessWidget {
           ), //kare alan yapar
 
           Container(
-            constraints: BoxConstraints(
+            constraints: const BoxConstraints(
               maxWidth: 150,
               minWidth: 50,
             ),
-            child: Text("ccccaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"),
-            padding: EdgeInsets.only(left: 10, bottom: 7),
-            margin: EdgeInsets.all(30),
+            padding: const EdgeInsets.only(left: 10, bottom: 7),
+            margin: const EdgeInsets.all(30),
             decoration: ProjectContainerDecoration(),
+            child: const Text("ccccaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"),
           ),
         ],
       ),
@@ -41,8 +41,7 @@ class ContainerSizedBoxLearn extends StatelessWidget {
 class ProjectContainerDecoration extends BoxDecoration {
   ProjectContainerDecoration()
       : super(
-            borderRadius:
-                const BorderRadius.horizontal(right: Radius.elliptical(12, 14)),
+            borderRadius: const BorderRadius.horizontal(right: Radius.elliptical(12, 14)),
             gradient: const LinearGradient(colors: [Colors.red, Colors.yellow]),
             //color: Colors.pink,
 
@@ -51,7 +50,7 @@ class ProjectContainerDecoration extends BoxDecoration {
               color: Colors.grey,
             ),
             boxShadow: [
-              BoxShadow(
+              const BoxShadow(
                 color: Colors.black,
                 offset: Offset(4, 7),
                 blurRadius: 19.8,
@@ -62,8 +61,7 @@ class ProjectContainerDecoration extends BoxDecoration {
 //DEĞİŞKEN İLE ÖZELLİKLERİ TAŞIDIK.
 class ProjectUtilityDecoration {
   static BoxDecoration boxDecoration = BoxDecoration(
-      borderRadius:
-          const BorderRadius.horizontal(right: Radius.elliptical(12, 14)),
+      borderRadius: const BorderRadius.horizontal(right: Radius.elliptical(12, 14)),
       gradient: const LinearGradient(colors: [Colors.red, Colors.yellow]),
       //color: Colors.pink,
 
@@ -71,7 +69,7 @@ class ProjectUtilityDecoration {
         width: 1.2,
         color: Colors.grey,
       ),
-      boxShadow: [
+      boxShadow: const [
         BoxShadow(
           color: Colors.black,
           offset: Offset(4, 7),

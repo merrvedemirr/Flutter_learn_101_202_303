@@ -83,6 +83,7 @@ class PostModel6 {
 
 class PostModel7 {
   //* herhangi bir json dosyasından bakarak yapıyoruz bu değerleri.
+  // ignore: unused_field
   late final int _userId;
   late final int _id;
   late final String _title;

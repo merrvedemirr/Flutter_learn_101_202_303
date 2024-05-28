@@ -28,7 +28,7 @@ class _ListViewLearnState extends State<ListViewLearn> {
             color: Colors.red,
             height: 300,
           ),
-          Divider(), //todo: Araya çizgi çeker.
+          const Divider(), //todo: Araya çizgi çeker.
           SizedBox(
             height: 300,
             child: ListView(
@@ -88,8 +88,8 @@ class _ListViewLearnState extends State<ListViewLearn> {
             ),
           ),
 
-          IconButton(onPressed: () {}, icon: Icon(Icons.close)),
-          _ListDemo(),
+          IconButton(onPressed: () {}, icon: const Icon(Icons.close)),
+          const _ListDemo(),
         ],
       ),
     );

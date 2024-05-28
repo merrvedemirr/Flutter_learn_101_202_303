@@ -34,6 +34,7 @@ class _CommentsLearnViewState extends State<CommentsLearnView> {
     _changeLoading(false);
   }
 
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),

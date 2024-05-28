@@ -67,12 +67,12 @@ class _ServiceLearnState extends State<ServiceLearn> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        actions: [_isLoading ? CircularProgressIndicator.adaptive() : SizedBox.shrink()],
+        actions: [_isLoading ? const CircularProgressIndicator.adaptive() : const SizedBox.shrink()],
       ),
       body: _items == null
-          ? Placeholder()
+          ? const Placeholder()
           : ListView.builder(
-              padding: EdgeInsets.symmetric(horizontal: 10),
+              padding: const EdgeInsets.symmetric(horizontal: 10),
               itemCount: _items?.length ?? 0,
               itemBuilder: (context, index) {
                 return _PostCard(
@@ -95,14 +95,14 @@ class _PostCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      margin: EdgeInsets.only(bottom: 20),
+      margin: const EdgeInsets.only(bottom: 20),
       child: ListTile(
         onTap: () {
           Navigator.of(context).push(MaterialPageRoute(builder: (context) => CommentsLearnView(postId: _model?.id)));
         },
         title: Text(
           _model?.title ?? "",
-          style: TextStyle(fontWeight: FontWeight.bold),
+          style: const TextStyle(fontWeight: FontWeight.bold),
         ),
         subtitle: Text(_model?.body ?? ""),
       ),

@@ -60,7 +60,7 @@ mixin NavigatorManager {
     Navigator.of(context).push(MaterialPageRoute(
       builder: (context) => widget,
       fullscreenDialog: true, //*İos da anlaşılıyor.
-      settings: RouteSettings(), //*sayfa geçişinde obje taşımamızı sağlar.
+      settings: const RouteSettings(), //*sayfa geçişinde obje taşımamızı sağlar.
     ));
   }
 

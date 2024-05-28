@@ -26,7 +26,7 @@ class NoteDemos extends StatelessWidget {
               padding: PaddingItems.verticalPadding,
               child: _SubTitleWidget(title: _description * 12),
             ),
-            Spacer(),
+            const Spacer(),
             _createButton(context),
             TextButton(onPressed: () {}, child: Text(_importNote)),
             SizedBox(
@@ -53,9 +53,7 @@ class NoteDemos extends StatelessWidget {
 
 class _SubTitleWidget extends StatelessWidget {
   const _SubTitleWidget(
-      {super.key,
-      this.textAlign = TextAlign.center,
-      required this.title}); //TEXT ALİGN VERİLMEZSE DEFAULT CENTER OLUR.
+      {super.key, this.textAlign = TextAlign.center, required this.title}); //TEXT ALİGN VERİLMEZSE DEFAULT CENTER OLUR.
 
   final TextAlign? textAlign; //NULLABLE YAPTIK. İSTERSEK VERMEYİZ
   final String title;
@@ -94,9 +92,8 @@ class _TitleWidget extends StatelessWidget {
 }
 
 class PaddingItems {
-  static final EdgeInsets horizontalPadding =
-      EdgeInsets.symmetric(horizontal: 20);
-  static final EdgeInsets verticalPadding = EdgeInsets.symmetric(vertical: 10);
+  static const EdgeInsets horizontalPadding = EdgeInsets.symmetric(horizontal: 20);
+  static const EdgeInsets verticalPadding = EdgeInsets.symmetric(vertical: 10);
 }
 
 class ButtonHeight {

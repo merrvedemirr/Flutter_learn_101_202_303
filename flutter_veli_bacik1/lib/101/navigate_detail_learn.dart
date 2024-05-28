@@ -22,7 +22,7 @@ class _NavigateLearnState extends State<NavigateLearn> {
               Icons.check,
               color: widget.isOkey ? Colors.red : Colors.green,
             ),
-            label: widget.isOkey ? Text("reddet") : Text("onayla"),
+            label: widget.isOkey ? const Text("reddet") : const Text("onayla"),
           ),
         ));
   }
